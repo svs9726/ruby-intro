@@ -30,4 +30,18 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+puts bitcoin_data["USD"]
+
+# extract bitcoin value in USD and print
+bitcoin_value = bitcoin_data["USD"]["last"]
+puts bitcoin_value
+
+
+# create variable for value of my bitcoin and then print 
+worth = bitcoin_value * bitcoin
+puts worth
+
+#Sample output part 1
+puts "Bitcoin is valued at #{bitcoin_value}"
+# sample output part 2
+puts "Your Bitcoin is worth #{worth}"
